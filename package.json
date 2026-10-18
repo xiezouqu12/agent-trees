@@ -1,0 +1,64 @@
+{
+  "name": "agent-trees",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Live multi-way tree of the current session's agents in DeepSeek Harness, with status, plan progress, tokens, cost, and runtime on every card.",
+  "license": "MIT",
+  "author": "xiezouqu12",
+  "homepage": "https://github.com/xiezouqu12/agent-trees#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiezouqu12/agent-trees.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiezouqu12/agent-trees/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "agent",
+    "subagent",
+    "workflow",
+    "tree",
+    "visualization"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "screenshots.json",
+    "screenshot-main.png",
+    "screenshot-sidebar.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

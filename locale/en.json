@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agent Trees",
+    "description": "Live multi-way tree of the current session's agents, with status, plan progress, tokens, cost, role, and runtime on every card."
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Agent Trees">
+  <defs>
+    <linearGradient id="at-root" x1="10" y1="10" x2="32" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- branch rails -->
+  <path d="M32 19h8" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M21 28v11a8 8 0 0 0 8 8h11" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="21" cy="47" r="2" fill="#94a3b8"/>
+
+  <!-- root agent card with a progress bar -->
+  <rect x="10" y="10" width="22" height="18" rx="5" fill="url(#at-root)"/>
+  <rect x="14" y="15" width="13" height="3" rx="1.5" fill="#ffffff" opacity="0.95"/>
+  <rect x="14" y="21" width="9" height="2.5" rx="1.25" fill="#ffffff" opacity="0.6"/>
+
+  <!-- delegated agents -->
+  <rect x="40" y="10" width="14" height="14" rx="4" fill="#f59e0b"/>
+  <rect x="40" y="40" width="14" height="14" rx="4" fill="#22c55e"/>
+  <rect x="44" y="15" width="6" height="2.5" rx="1.25" fill="#ffffff" opacity="0.95"/>
+  <rect x="44" y="45" width="6" height="2.5" rx="1.25" fill="#ffffff" opacity="0.95"/>
+</svg>
